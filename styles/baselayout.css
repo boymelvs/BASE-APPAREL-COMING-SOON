@@ -120,6 +120,7 @@ input {
    border-radius: 2.5rem;
    outline: none;
    font-weight: var(--font-weight-600);
+   z-index: 0;
 }
 
 ::placeholder {
@@ -146,4 +147,20 @@ input:focus {
       var(--bg2-linear-135deg-to)
    );
    box-shadow: 0 1.5rem 2rem rgba(206, 151, 151, 0.3);
+}
+
+.error_message {
+   display: none;
+}
+
+/* add css for javascript */
+.error_message.active {
+   margin: 1.5rem;
+   color: var(--soft-red);
+}
+
+.email.error_active {
+   background-image: url("../images/icon-error.svg");
+   background-position: top 1rem right 8.5rem;
+   background-repeat: no-repeat;
 }
