@@ -1,0 +1,124 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem; /* between main_content and footer */
+}
+
+.main_content {
+   width: 37.5rem;
+   background-image: url("../images/bg-pattern-desktop.svg"),
+      linear-gradient(
+         135deg,
+         var(--bg1-linear-135deg-from),
+         var(--bg1-linear-135deg-to)
+      );
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.mobile_view {
+   display: flex;
+   flex-direction: column;
+}
+
+.logo {
+   width: 13rem;
+   height: 3rem;
+   margin: 2rem;
+}
+
+.hero_mobile {
+   background-image: url("../images/hero-mobile.jpg");
+   background-repeat: no-repeat;
+   background-size: 100%;
+   width: 100%;
+   min-height: 25rem;
+}
+
+.title_details_email_container {
+   text-align: center;
+   margin-top: 5rem;
+
+   display: flex;
+   flex-direction: column;
+   gap: 3rem; /* between titlte, details, email and warning message */
+}
+
+.title {
+   text-transform: uppercase;
+   letter-spacing: 1.2rem;
+   padding: 0 3rem;
+   color: var(--dark-grayish-red);
+   font-weight: var(--font-weight-600);
+   line-height: 3.75rem;
+}
+
+.title span {
+   color: var(--desaturated-red);
+   font-weight: var(--font-weight-300);
+}
+
+.details {
+   margin: 0 1.5rem;
+   line-height: 1.5;
+}
+
+.forms {
+   margin: 0 1.5rem;
+}
+
+.email {
+   width: 100%;
+   padding: 1.5rem;
+   border: 0.1rem solid var(--desaturated-red);
+   background-color: var(--bg1-linear-135deg-to);
+   border-radius: 2.5rem;
+   outline: none;
+   font-weight: var(--font-weight-600);
+}
+
+::placeholder {
+   font-weight: var(--font-weight-400);
+   color: var(--desaturated-red);
+   opacity: 0.5;
+}
+
+.email:focus,
+.btn:focus {
+   border: 0.2rem solid var(--desaturated-red);
+   outline: none;
+}
+
+.btn {
+   position: relative;
+   top: -4.85rem;
+   right: -14rem;
+   padding: 1.3rem;
+   width: 8rem;
+   border-radius: 2.5rem;
+   background: linear-gradient(
+      135deg,
+      var(--bg2-linear-135deg-from),
+      var(--bg2-linear-135deg-to)
+   );
+   box-shadow: 0 1.5rem 2rem rgba(206, 151, 151, 0.3);
+   border: none;
+}
+
+.btn:hover {
+   transform: scale(1.05);
+   cursor: pointer;
+   background: var(--bg2-linear-135deg-from);
+}
+
+.error_message {
+   display: none;
+}
+
+.message_container {
+   margin-top: -5rem;
+   height: 7rem;
+   padding: 1rem;
+}

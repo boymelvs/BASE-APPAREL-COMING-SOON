@@ -39,128 +39,24 @@ body {
    color: var(--desaturated-red);
 }
 
-.container {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   gap: 1rem; /* between main_content and footer */
-   /* margin: 1rem; */
-}
-
-.main_content {
-   /* width: 80rem; */
-   background-image: url("../images/bg-pattern-desktop.svg"),
-      linear-gradient(
-         135deg,
-         var(--bg1-linear-135deg-from),
-         var(--bg1-linear-135deg-to)
-      );
-   /* background-position: top -4rem left 0; */
-   background-repeat: no-repeat;
-   background-size: cover;
-}
-
-.mobile_view {
-   display: flex;
-   flex-direction: column;
-}
-
-.logo {
-   width: 10rem;
-   height: 2rem;
-   margin: 2rem;
-}
-
-.hero_mobile {
-   background-image: url("../images/hero-mobile.jpg");
-   background-repeat: no-repeat;
-   background-size: 100%;
-   width: 100%;
-   height: 25rem;
-}
-
-.title_details_email_container {
+footer {
    text-align: center;
-   margin: 5rem 0;
-
-   display: flex;
-   flex-direction: column;
-   gap: 3rem; /* between titlte, details and email input */
 }
 
-.title {
-   text-transform: uppercase;
-   letter-spacing: 1.2rem;
-   padding: 0 3rem;
-   color: var(--dark-grayish-red);
-   font-weight: var(--font-weight-600);
-   line-height: 3.75rem;
-}
-
-.title span {
-   color: var(--desaturated-red);
-   font-weight: var(--font-weight-300);
-}
-
-.details {
-   margin: 0 1.5rem;
-   line-height: 1.5;
-}
-
-.forms {
-   margin: 0 1.5rem;
-}
-
-input {
-   width: 100%;
-   padding: 1.5rem;
-   border: 0.1rem solid var(--desaturated-red);
-   background-color: var(--bg1-linear-135deg-to);
-   border-radius: 2.5rem;
-   outline: none;
-   font-weight: var(--font-weight-600);
-   z-index: 0;
-}
-
-::placeholder {
-   font-weight: var(--font-weight-400);
-   color: var(--desaturated-red);
-   opacity: 0.4;
-}
-
-input:focus {
-   border: 0.1rem solid var(--soft-red);
-}
-
-.btn {
-   position: absolute;
-   right: 1.51rem;
-   padding: 1.2rem;
-   width: 8rem;
-   border-radius: 2.5rem;
-   /* border: 0.1rem solid var(--desaturated-red); */
-   border: 0;
-   background: linear-gradient(
-      135deg,
-      var(--bg2-linear-135deg-from),
-      var(--bg2-linear-135deg-to)
-   );
-   box-shadow: 0 1.5rem 2rem rgba(206, 151, 151, 0.3);
-}
-
-.error_message {
-   display: none;
+footer a {
+   text-decoration: none;
 }
 
 /* add css for javascript */
+
 .error_message.active {
-   margin: 1.5rem;
+   display: unset;
    color: var(--soft-red);
 }
 
-.email.error_active {
+.email.active {
    background-image: url("../images/icon-error.svg");
    background-position: top 1rem right 8.5rem;
    background-repeat: no-repeat;
+   border: 0.2rem solid var(--soft-red);
 }

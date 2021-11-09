@@ -18,6 +18,24 @@
       />
       <link rel="stylesheet" href="./styles/baselayout.css" />
 
+      <link
+         rel="stylesheet"
+         href="./styles/mobile.css"
+         media="(min-width:120px) and (max-width:480px)"
+      />
+
+      <link
+         rel="stylesheet"
+         href="./styles/ipadtablets.css"
+         media="(min-width:481px) and (max-width:1024px)"
+      />
+
+      <link
+         rel="stylesheet"
+         href="./styles/desktop.css"
+         media="(min-width:1025px)"
+      />
+
       <title>Frontend Mentor | Base Apparel coming soon page</title>
    </head>
    <body>
@@ -51,11 +69,14 @@
                         <img
                            src="./images/icon-arrow.svg"
                            alt="arrow"
-                           class="Icon_arrow"
+                           class="icon_arrow"
                         />
                      </button>
-
-                     <p class="error_message">Please provide a valid email.</p>
+                     <div class="message_container">
+                        <p class="error_message">
+                           Please provide a valid email.
+                        </p>
+                     </div>
                   </form>
                </div>
             </div>
@@ -79,6 +100,7 @@
                >.
             </p>
          </footer>
+         <script src="./scripts/index.js"></script>
       </div>
    </body>
 </html>

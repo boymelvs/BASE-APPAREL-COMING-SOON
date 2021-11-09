@@ -1,0 +1,124 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem; /* between main_content and footer */
+   padding: 3rem 2rem;
+}
+
+.main_content {
+   display: flex;
+   gap: 5rem;
+   background-image: url("../images/bg-pattern-desktop.svg"),
+      linear-gradient(
+         135deg,
+         var(--bg1-linear-135deg-from),
+         var(--bg1-linear-135deg-to)
+      );
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.logo {
+   width: 13rem;
+   height: 3rem;
+   margin: 7rem 0 2rem 6rem;
+}
+
+.hero_desktop {
+   background-image: url("../images/hero-desktop.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 61rem;
+   min-height: 80rem;
+}
+
+.title_details_email_container {
+   margin-top: 7rem;
+   margin: 7rem 1rem 0 6rem;
+
+   display: flex;
+   flex-direction: column;
+   gap: 7rem; /* between titlte, details, email and warning message */
+   width: 45rem;
+}
+
+.title {
+   font-size: 5rem;
+   line-height: 6rem;
+   padding-right: 6rem;
+   letter-spacing: 1.2rem;
+   text-transform: uppercase;
+   color: var(--dark-grayish-red);
+   font-weight: var(--font-weight-600);
+}
+
+.title span {
+   color: var(--desaturated-red);
+   font-weight: var(--font-weight-300);
+}
+
+.details {
+   padding-right: 5rem;
+   line-height: 1.5;
+}
+
+.forms {
+   padding-right: 5rem;
+   margin-bottom: 5rem;
+}
+
+.email {
+   width: 100%;
+   padding: 1.5rem;
+   border-radius: 2.5rem;
+   outline: none;
+   font-weight: var(--font-weight-600);
+   border: 0.1rem solid var(--desaturated-red);
+   background-color: var(--bg1-linear-135deg-to);
+}
+
+::placeholder {
+   opacity: 0.5;
+   color: var(--desaturated-red);
+   font-weight: var(--font-weight-400);
+}
+
+.email:focus,
+.btn:focus {
+   border: 0.2rem solid var(--desaturated-red);
+   outline: none;
+}
+
+.btn {
+   position: relative;
+   top: -4.9rem;
+   right: -33rem;
+   padding: 1.3rem;
+   width: 8rem;
+   border-radius: 2.5rem;
+   background: linear-gradient(
+      135deg,
+      var(--bg2-linear-135deg-from),
+      var(--bg2-linear-135deg-to)
+   );
+   box-shadow: 0 1.5rem 2rem rgba(206, 151, 151, 0.3);
+   border: none;
+}
+
+.btn:hover {
+   transform: scale(1.05);
+   cursor: pointer;
+   background: var(--bg2-linear-135deg-from);
+}
+
+.error_message {
+   display: none;
+}
+
+.message_container {
+   margin-top: -5rem;
+   height: 7rem;
+   padding: 1rem;
+}
