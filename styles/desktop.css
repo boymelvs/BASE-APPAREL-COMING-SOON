@@ -16,8 +16,9 @@
          var(--bg1-linear-135deg-from),
          var(--bg1-linear-135deg-to)
       );
+   background-position: top 0rem left 1rem;
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size: 70%;
 }
 
 .logo {
